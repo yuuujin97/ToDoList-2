@@ -1,0 +1,23 @@
+@import '_base.scss';
+
+body {
+  font: 100% $font-stack;
+  background-color: $--gray-dark-color;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 50%;
+  margin-top: 3rem;
+  background-color: $--skyblue-light-color;
+  border: 3px solid $--skyblue-dark-color;
+  border-radius: 10px;
+}
