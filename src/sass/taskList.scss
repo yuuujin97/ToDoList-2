@@ -24,6 +24,10 @@ li {
 
       .task__done {
         margin-right: 10px;
+
+        &:checked ~ span {
+          color: $--gray-light-color;
+        }
       }
 
       button {
@@ -48,12 +52,13 @@ li {
 
         &.show {
           display: block;
+          z-index: 9999;
         }
 
         &::after {
           bottom: 100%;
           transform: translate(-1px, 3px);
-          left: 70px;
+          left: 85px;
           border: solid transparent;
           content: ' ';
           position: absolute;
@@ -69,6 +74,11 @@ li {
           li {
             cursor: pointer;
             padding: 0 10px;
+
+            i {
+              font-size: 13px;
+              padding-right: 3px;
+            }
           }
 
           li:hover {

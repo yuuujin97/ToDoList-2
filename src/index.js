@@ -4,14 +4,15 @@ import './css/index.css';
 import Header from './containers/header';
 import TaskList from './containers/taskList';
 import reportWebVitals from './reportWebVitals';
+import { TodoProvider } from './TodoContext';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <TodoProvider>
     <div className="wrap">
       <Header />
       <TaskList />
     </div>
-  </React.StrictMode>,
+  </TodoProvider>,
   document.getElementById('root')
 );
 

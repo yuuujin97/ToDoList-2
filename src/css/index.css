@@ -3,4 +3,4 @@ body { font: 100% "Titillium Web", sans-serif; background-color: #252525; width:
 
 #root { width: 100%; display: flex; justify-content: center; align-items: center; }
 
-.wrap { width: 50%; margin-top: 3rem; background-color: #d7ebf8; border: 3px solid #4ca2db; border-radius: 10px; }
+.wrap { width: 50%; margin-top: 3rem; background-color: #d7ebf8; border-radius: 10px; }
