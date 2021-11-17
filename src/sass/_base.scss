@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Titillium+Web:wght@300;700&display=swap');
 
-$font-stack: 'Titillium Web', sans-serif;
+$font-stack: 'Titillium Web', 'Noto Sans KR', sans-serif;
 
 // Color
-$--skyblue-very-dark-color: #0068ad;
 $--skyblue-dark-color: #4ca2db;
-$--skyblue-light-color: #d7ebf8;
+$--skyblue-light-color: #e8f5fd;
 $--skyblue-grayish-color: #98b7cc;
 $--gray-dark-color: #252525;
-$--gray-light-color: #c0c0c0;
+$--gray-light-color: #dadada;

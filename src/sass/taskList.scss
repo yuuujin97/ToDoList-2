@@ -6,6 +6,14 @@ li {
   margin: 0;
 }
 
+button {
+  font-size: 1rem;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .task__wrap {
   display: flex;
   justify-content: center;
@@ -21,24 +29,36 @@ li {
     .task__item {
       line-height: 3rem;
       position: relative;
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
 
-      .task__done {
+      .task__check {
         margin-right: 10px;
+        width: 32px;
+        height: 32px;
+        line-height: 30px;
+        border-radius: 16px;
+        border: 1px solid $--gray-light-color;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &:checked ~ span {
-          color: $--gray-light-color;
+        &.done {
+          border: 1px solid $--skyblue-dark-color;
+          color: $--skyblue-dark-color;
+        }
+
+        &.done ~ span {
+          color: $--skyblue-grayish-color;
         }
       }
 
-      button {
+      .task__menu__btn {
         position: absolute;
         right: 0;
-        font-size: 1rem;
-        height: 100%;
         color: $--skyblue-dark-color;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
       }
 
       .task__menu {
@@ -75,9 +95,14 @@ li {
             cursor: pointer;
             padding: 0 10px;
 
-            i {
-              font-size: 13px;
-              padding-right: 3px;
+            button {
+              padding: 0;
+              color: white;
+              font-family: inherit;
+              i {
+                font-size: 13px;
+                padding-right: 3px;
+              }
             }
           }
 

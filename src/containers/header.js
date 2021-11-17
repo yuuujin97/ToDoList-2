@@ -1,11 +1,8 @@
 import React from 'react';
 import '../css/header.css';
 import InputAddTask from '../components/inputAddTask';
-import { useTodoState } from '../TodoContext';
 
 function Header() {
-  const todos = useTodoState();
-  console.log(todos);
   return (
     <header>
       <div>

@@ -1,17 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Titillium+Web:wght@300;700&display=swap");
 ul, li { list-style: none; margin: 0; }
+
+button { font-size: 1rem; height: 100%; border: none; background-color: transparent; cursor: pointer; }
 
 .task__wrap { display: flex; justify-content: center; margin-bottom: 2rem; }
 
 .task__wrap .task__list { width: 80%; background-color: white; border-radius: 5px; font-size: 20px; padding: 0 10px; }
 
-.task__wrap .task__list .task__item { line-height: 3rem; position: relative; }
+.task__wrap .task__list .task__item { line-height: 3rem; position: relative; display: flex; align-items: center; padding: 5px 0; }
 
-.task__wrap .task__list .task__item .task__done { margin-right: 10px; }
+.task__wrap .task__list .task__item .task__check { margin-right: 10px; width: 32px; height: 32px; line-height: 30px; border-radius: 16px; border: 1px solid #dadada; font-size: 24px; display: flex; justify-content: center; align-items: center; }
 
-.task__wrap .task__list .task__item .task__done:checked ~ span { color: #c0c0c0; }
+.task__wrap .task__list .task__item .task__check.done { border: 1px solid #4ca2db; color: #4ca2db; }
 
-.task__wrap .task__list .task__item button { position: absolute; right: 0; font-size: 1rem; height: 100%; color: #4ca2db; border: none; background-color: transparent; cursor: pointer; }
+.task__wrap .task__list .task__item .task__check.done ~ span { color: #98b7cc; }
+
+.task__wrap .task__list .task__item .task__menu__btn { position: absolute; right: 0; color: #4ca2db; }
 
 .task__wrap .task__list .task__item .task__menu { display: none; position: absolute; right: -20px; top: 40px; padding: 10px 0; background-color: #4ca2db; color: white; }
 
@@ -23,6 +27,8 @@ ul, li { list-style: none; margin: 0; }
 
 .task__wrap .task__list .task__item .task__menu ul li { cursor: pointer; padding: 0 10px; }
 
-.task__wrap .task__list .task__item .task__menu ul li i { font-size: 13px; padding-right: 3px; }
+.task__wrap .task__list .task__item .task__menu ul li button { padding: 0; color: white; font-family: inherit; }
+
+.task__wrap .task__list .task__item .task__menu ul li button i { font-size: 13px; padding-right: 3px; }
 
 .task__wrap .task__list .task__item .task__menu ul li:hover { background-color: rgba(255, 255, 255, 0.4); }
